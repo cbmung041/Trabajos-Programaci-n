@@ -1,4 +1,3 @@
-/* Reseteo básico */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +10,6 @@ body {
     color: #333;
 }
 
-/* Header */
 header {
     background-color: #000;
     color: white;
@@ -45,7 +43,6 @@ nav ul li a:hover {
     border-bottom: 2px solid #fff;
 }
 
-/* Sección de categorías */
 #destacados {
     padding: 40px 10%;
     background-color: #f7f7f7;
@@ -76,7 +73,6 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/* Footer */
 footer {
     background-color: #000;
     color: white;
