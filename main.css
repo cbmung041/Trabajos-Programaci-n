@@ -18,7 +18,7 @@ a {
 }
 body {
 	font-family: 'Montserrat', sans-serif;
-	background-color: lightgray;
+	background-color: #cbd7e6;
 	overflow-x: hidden;
 }
 img {
@@ -95,11 +95,11 @@ a:visited {
 /*～●～●～●～●～  THEMES  ●～●～●～●～●～●～*/
 
 .theme-sky {
-	background-color: #000000;
+	background-color: #43628b;
 	color: white;
 }
 .theme-sky-dark {
-	background-color: #000000;
+	background-color: #080817;
 	color: white;
 }
 /*☆☆.｡.:*･ﾟ*:.｡.☆☆.｡.:*･ﾟ*:.  Fin GENERALES    .｡.☆☆.｡.:*･ﾟ*:.｡.☆☆*/
