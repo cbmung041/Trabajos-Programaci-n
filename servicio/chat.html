@@ -1,11 +1,132 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tienda - Dig Nigg</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+    <title></title>
 </head>
 <body>
+    <!--  ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´  INICIO HEADER ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´ -->
 
+    <header class="header theme-sky-dark in-line" id="header">
+
+        <!-- inicia marca del header -->
+
+        <div class="in-line">
+            <img class="branding-logo"
+                 src="../images/logo.png"
+                 alt ="logotipo de Dig Nigg"
+                 aria-hidden="true" />
+            <p class="branding"
+               aria-label="Bienvenido a nuestra tienda on-line:">Dig Nigg</p>
+        </div>
+
+        <!-- finaliza marca del header-->
+
+        <!-- inicia boton cart-->
+
+        <div>
+            <button type="button"
+                    class=" btn-cart in-line button button-simple-empty"
+                    aria-label="Mostrar productos agregados al carrito">
+                <i class="fas fa-shopping-cart cart-icon"
+                   aria-hidden="true"
+                   aria-live="polite"></i>
+                <div class= "cart-text">
+                    <p>Carrito (<span class="cart-qty">0</span>ítems)</p>
+                </div>
+                
+            </button>
+        </div>
+        <!--finaliza boton cart-->
+    </header>
+
+    <!--★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´ FIN HEADER ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´ -->
+
+    <!--  ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･ INICIO BANNER  ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´ -->
+
+    <section class="banner  in-stack">
+        <div>
+            <img class="banner-img" 
+                 src="../images/banner2.png"
+                 alt= "escritorio con productos de la 
+                       categoria electronica."
+                 aria-hidden="true" />
+        </div>
+        <div class="banner-title">
+           <h1>CHAT</h1>  
+        </div>
+    </section>
+
+    <div class="about-us">
+        <h1>¡Hola! ¿En qué podemos ayudarte hoy?</h1>
+        <p>Bienvenido a DiggNig. Si tienes alguna pregunta sobre nuestros productos, tu pedido o cualquier otra cosa, no dudes en escribirnos. Nuestro equipo está listo para ayudarte y resolver cualquier duda que tengas. 😊</p>
+
+        <p><strong>Número de contacto por teléfono:</strong> 646 123 4567</p>
+        <p><strong>Número de contacto por Whatsapp:</strong> 646 987 6543</p>
+
+        <h2>Chat de Soporte</h2>
+
+        <!-- Contenedor del chat -->
+        <div class="chat-container">
+            <div class="chat-box">
+                <div class="chat-header">
+                    <h3>Chat de Soporte</h3>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <!-- Mensajes aparecerán aquí -->
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="user-message" placeholder="Escribe tu mensaje...">
+                    <button id="send-btn">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Función para enviar el mensaje y añadirlo al chat
+        document.getElementById('send-btn').addEventListener('click', function() {
+            const userMessage = document.getElementById('user-message').value;
+            if (userMessage.trim()) {
+                const messageElement = document.createElement('div');
+                messageElement.classList.add('user-message');
+                messageElement.textContent = userMessage;
+                document.getElementById('chat-messages').appendChild(messageElement);
+
+                // Limpiar el campo de entrada
+                document.getElementById('user-message').value = '';
+            }
+        });
+    </script>
+
+    <!--  ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･ INICIO FOOTER ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´ -->
+    <footer class="footer-main theme-sky-dark">
+        <div class="footer-links">
+            <div class="service">
+                <h4></h4><br><br>
+                            <ul>
+                    <li><a href="https://www.instagram.com/dig_nigg" target="_blank">Instagram</a><li>                    
+                </ul>
+            </div>
+            <div class="company">
+                <h4>Redes sociales</h4><br>
+                <ul>
+                    <li><a href="https://www.facebook.com/Ian.Heriberto.Munguia/" target="_blank">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <h4></h4><br><br>
+                <ul>
+                    <li><a href="https://www.tiktok.com/@dig_nigg" target="_blank">TikTok</a></li>
+                </ul>
+            </div>
+        </div>    
+    </footer>
+    <!--  ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･ FIN FOOTER★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´ -->
 </body>
 </html>
